@@ -5,15 +5,17 @@
 This program has two roles :
 
 - Infrastructure Deployment
+
 Build out a K5 region wide infrastructure, both datacentres az1 and az2, capable of hosting 1000VMs (only tested to 1000 could potentially go beyond). All 1000 VMs within this region will be capable of communicating with each other over the K5 intranet. No internet traffic required.
 Note: Speak with your Fujitsu K5 contract owner if you need to test beyond the quotas set by default within a project (20 virtual machines at the time of writing this ReadMe). The script was tested up to 2000 vCPU. The quotas within projects are soft limits that can be changed by K5 administrators. A Jumpbox server is also deployed and the public ip address provided once the initial script run completes.
 
 - Test Server Deployment
+
 When the infrastructure is deployed the script starts a background monitoring process which will be used to time all the test server deployments.
 The servers are then deployed in batches sizes of (total servers/number of networks[defaults to 20]) and a delay of (1.61*batch size)  seconds is invoked before deploying the next batch. This process is run in parallel across both availability zones.
 
 ## Configuration File - k5contractsettingsV10.py
-Before launching either of the scripts in this repo it is necessary to first configure all sections of the k5contractsettingsV10.py file with K5 contract details, ssh keys to use, target prototal_servers = 20total_servers = 20ject etc.
+Before launching either of the scripts in this repo it is necessary to first configure all sections of the k5contractsettingsV10.py file with K5 contract details, ssh keys to use, target project etc.
 
 ## total_servers = 20 <---- Ensure to set this to meet your needs
 
