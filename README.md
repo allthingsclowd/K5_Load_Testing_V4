@@ -57,4 +57,5 @@ This file imports the following to files:
 ## How to launch the script
 python purge_project.py
 
+All the code can be found here - https://github.com/allthingsclowd/K5_Load_Testing_V4
 
