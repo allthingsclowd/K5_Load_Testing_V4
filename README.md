@@ -22,7 +22,7 @@ Before launching either of the scripts in this repo it is necessary to first con
 ## 'buildInfrastructure' toggle
 After the initial run of this script it is necessary to toggle the 'buildInfrastructure = True' to 'buildInfrastructure = False' in the k5contractsettingsV10.py file.
 This ensures that subsequent test runs leverage the existing infrastructure - the configuration details are stored in K5's object storage during deployment and simply read back in on subsequent test runs.
-The same toggle is used to ensure that the purge_project_parallel.py file only purges the servers under test.
+The same toggle is used to ensure that the purge_project.py file only purges the servers under test.
 
 The script builds and configures the necessary infrastructure (security groups, networks subnets etc) for half the total server count in each K5 availability zone within the region under test. It then links ALL the subnets to ensure all nodes can communicate with each other. A Jumpbox server is also deployed and the public ip address provided once the initial script completes.
 
