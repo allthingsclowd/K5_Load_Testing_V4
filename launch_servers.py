@@ -1313,53 +1313,7 @@ def main():
     global testAZ1
     global testAZ2
     global buildInfrastructure
-    # global
-    # global
-    # global
-    # global
-    # global
-    # global
-    # global
-
-
-    # Initialise environment parameters
-    # adminUser = 'landg' # k5/openstack user login name
-    # adminPassword = 'Btbchf1btbyhc!55!' # k5/openstack user password
-    # contract = 'YssmW1yI' # k5 contract name or openstack domain name
-    # defaultProject = 'YssmW1yI-prj' # default project id - on k5 it's the project name that starts with contract name and ends with -prj
-    # extaz1 = 'df8d3f21-75f2-412a-8fd9-29de9b4a4fa8' # K5 availability zone b external network id
-    # extaz2 = 'd730db50-0e0c-4790-9972-1f6e2b8c4915' # K5 availability zone b external network id
-    # demoProjectA = 'Project_A' # k5/openstack demo target project name
-    # demoProjectAid = '7015d1478a4c4bd7b970215d7b0260dd' # k5/openstack demo target project id
-    # region = 'uk-1' # target region
-    # az1 = 'uk-1a'
-    # az2 = 'uk-1b'
-    # az1keyname = 'k5-loadtest-az1'
-    # az2keyname = 'k5-loadtest-az2'
-    # publickey = 'ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAn4+D2gHscLKf2xQMg/kkyNe7DLEO/BG3QYBY0iya298VMSWnHl36fsGLKhhQEmEroauP6+tNt2YgG1ocYEKMoF+Qp4cy1PvU0cSpvRnz/TDYnhx1jlXckzwx4bHmP9rOjMubVICl9Y/o9MUG1BBMTix1XMBw8gSIfvCO/fVSNNyXzSuXApZ+qNug1voNDch4ksdaJaag03FF7yb5HyrKesvcRIwMtohXk1ohowhLJA3NCfvdT3nM4Ct1+YtNX/jmUzhLNOlVsc1EhSWxEpx+yxzdqpTJ/QafY/WkrWO8fiMsDL2FsogjPTPV0JpyKBuv01mxU9Xf2ObW6/QZduaANw== imported-openssh-key'
-
-    # buildInfrastructure = False
-
-
-
-    # # parameters for K5 object storage container to hold current results and historical results
-    # k5resultcontainer = "K5_Deployment_Results"
-    # k5currenttest = "k5current.json"
-    # k5testrecords = "k5testrecords.json"
-    # k5infracontainer = "K5TestInfrastructure"
-    # k5infrafile = "k5testinfra.json"
-
-    # # this is the id of the K5 ubuntu image
-    # image_id = "ffa17298-537d-40b2-a848-0a4d22b49df5"
-    # # the is the id of a small flavor size (S-2)
-    # flavor_id = "1102"
-
-    # # number of servers deploy to region
-    # total_servers = 20
-    # servers_per_network = 50
-
-    # # delay used to calculate timeouts and set delays between batch API server calls
-    # average_server_build_time = 1.61
+    
     # delay necessary for very small test runs under 4 servers
     minimumBuildTime = 240
 
